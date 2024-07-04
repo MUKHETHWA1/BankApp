@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import kotlin.system.exitProcess
 
 class BankOptionsActivity : AppCompatActivity() {
     lateinit var balance:Button
@@ -39,6 +40,9 @@ class BankOptionsActivity : AppCompatActivity() {
         registeracc.setOnClickListener {
             val accregister = Intent(this,AccountRegisterActivity::class.java)
             startActivity(accregister)
+        }
+        exit.setOnClickListener {
+            finishAffinity()//code to exit the application
         }
 
     }
