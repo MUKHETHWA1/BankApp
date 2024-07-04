@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DepositActivity">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="176dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="156dp"
+        android:gravity="center"
+        android:text="Deposit"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnBackDeposit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Back"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etAccIDDeposit"
+        android:layout_width="231dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="Enter Account ID"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <EditText
+        android:id="@+id/etAmountDeposit"
+        android:layout_width="231dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="96dp"
+        android:ems="10"
+        android:hint="Enter Amount"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etAccIDDeposit"
+        app:layout_constraintStart_toStartOf="@+id/etAccIDDeposit"
+        app:layout_constraintTop_toBottomOf="@+id/etAccIDDeposit" />
+
+    <Button
+        android:id="@+id/btnDepositAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:text="Deposit"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/etAmountDeposit"
+        app:layout_constraintStart_toStartOf="@+id/etAmountDeposit"
+        app:layout_constraintTop_toBottomOf="@+id/etAmountDeposit" />
+</androidx.constraintlayout.widget.ConstraintLayout>

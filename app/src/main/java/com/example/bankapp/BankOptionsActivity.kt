@@ -32,6 +32,10 @@ class BankOptionsActivity : AppCompatActivity() {
             val withdraw=Intent(this,WithdrawActivity::class.java)
             startActivity(withdraw)
         }
+        deposit.setOnClickListener {
+            val deposit = Intent(this,DepositActivity::class.java)
+            startActivity(deposit)
+        }
 
     }
 }
