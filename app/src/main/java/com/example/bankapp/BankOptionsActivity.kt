@@ -36,6 +36,10 @@ class BankOptionsActivity : AppCompatActivity() {
             val deposit = Intent(this,DepositActivity::class.java)
             startActivity(deposit)
         }
+        registeracc.setOnClickListener {
+            val accregister = Intent(this,AccountRegisterActivity::class.java)
+            startActivity(accregister)
+        }
 
     }
 }
