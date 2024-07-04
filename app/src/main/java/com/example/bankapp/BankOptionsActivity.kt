@@ -16,6 +16,7 @@ class BankOptionsActivity : AppCompatActivity() {
     lateinit var exit:Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.activity_bank_options)
         balance=findViewById(R.id.btnCheckBalance)
         withdraw=findViewById(R.id.btnWithdraw)
@@ -26,6 +27,10 @@ class BankOptionsActivity : AppCompatActivity() {
         balance.setOnClickListener {
             val balance = Intent(this,CheckBalanceActivity::class.java)
             startActivity(balance)
+        }
+        withdraw.setOnClickListener {
+            val withdraw=Intent(this,WithdrawActivity::class.java)
+            startActivity(withdraw)
         }
 
     }
