@@ -32,10 +32,15 @@ class CheckBalanceActivity : AppCompatActivity() {
         backbutton=findViewById(R.id.btnBackCheckBalance)
         displaytext=findViewById(R.id.tvDisplayBalance)
         searchbalance=findViewById(R.id.edAccIdBalance)
+        checkbutton=findViewById(R.id.btnCheck)
 
         backbutton.setOnClickListener {
             val back=Intent(this,BankOptionsActivity::class.java)
             startActivity(back)
+        }
+        checkbutton.setOnClickListener {
+            val queryValue = searchbalance.text.toString()
+            RetrieveDataTask().execute(queryValue)
         }
 
     }
@@ -66,8 +71,9 @@ class CheckBalanceActivity : AppCompatActivity() {
         }
     }
 
-    private inner class RetrieveDataTask : AsyncTask<Void, Void, String>() {
-        override fun doInBackground(vararg params: Void?): String {
+    private inner class RetrieveDataTask : AsyncTask<String, Void, String>() {
+        override fun doInBackground(vararg params: String): String {
+            val queryValue = params[0]
             var connection: Connection? = null
             var statement: Statement? = null
             var result: StringBuilder = StringBuilder()
