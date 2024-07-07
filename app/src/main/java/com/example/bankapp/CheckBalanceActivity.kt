@@ -22,7 +22,7 @@ class CheckBalanceActivity : AppCompatActivity() {
     lateinit var displaytext:TextView
     lateinit var searchbalance:EditText
 
-    private val connectionUrl = "jdbc:sqlserver://labG9AEB3\\SQLEXPRESS:1433;databaseName=ACCOUNT;integratedSecurity=true;"
+    private val connectionUrl = "jdbc:sqlserver://labG9AEB3\\SQLEXPRESS:1433;databaseName=Bank;integratedSecurity=true;"
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
