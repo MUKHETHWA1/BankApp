@@ -22,6 +22,7 @@ class CheckBalanceActivity : AppCompatActivity() {
     lateinit var displaytext:TextView
     lateinit var searchbalance:EditText
 
+     //Connection To the sql server
     private val connectionUrl = "jdbc:sqlserver://labG9AEB3\\SQLEXPRESS:1433;databaseName=Bank;integratedSecurity=true;"
 
 
@@ -44,7 +45,7 @@ class CheckBalanceActivity : AppCompatActivity() {
         }
 
     }
-    private inner class StoreDataTask : AsyncTask<String, Void, String>() {
+    /*private inner class StoreDataTask : AsyncTask<String, Void, String>() {
         override fun doInBackground(vararg params: String): String {
             val data1 = params[0]
             val data2 = params[1]
@@ -69,7 +70,7 @@ class CheckBalanceActivity : AppCompatActivity() {
         override fun onPostExecute(result: String) {
             displaytext.text = result
         }
-    }
+    }*/
 
     private inner class RetrieveDataTask : AsyncTask<String, Void, String>() {
         override fun doInBackground(vararg params: String): String {
