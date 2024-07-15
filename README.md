@@ -7,3 +7,7 @@ App Functions:
 Options:
 
 1. Check Balance
+2. Deposit
+3. Withdraw
+4. Register Account
+5. Exit
