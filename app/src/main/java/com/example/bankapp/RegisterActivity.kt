@@ -32,6 +32,12 @@ class RegisterActivity : AppCompatActivity() {
         auth=FirebaseAuth.getInstance()
 
         signintextview.setOnClickListener {
+            val intent= Intent(this,MainActivity::class.java)
+                        startActivity(intent)
+
+        }
+
+        signinbutton.setOnClickListener {
             val emailR=usernameedittext.text.toString()
             val passR=passwordedittext.text.toString()
 
@@ -49,11 +55,6 @@ class RegisterActivity : AppCompatActivity() {
             }else{
                 Toast.makeText(this,"empty fields not allowed",Toast.LENGTH_SHORT).show()
             }
-        }
-
-        signinbutton.setOnClickListener {
-            val next = Intent(this,MainActivity::class.java)
-            startActivity(next)
         }
 
     }
