@@ -49,8 +49,8 @@ class RegisterActivity : AppCompatActivity() {
             }else{
                 Toast.makeText(this,"empty fields not allowed",Toast.LENGTH_SHORT).show()
             }
-
         }
+
         signinbutton.setOnClickListener {
             val next = Intent(this,MainActivity::class.java)
             startActivity(next)
