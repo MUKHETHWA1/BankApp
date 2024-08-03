@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "664985898957",
+    "firebase_url": "https://login-register-7634c-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "login-register-7634c",
+    "storage_bucket": "login-register-7634c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664985898957:android:368ed88747324e0bd23e84",
+        "android_client_info": {
+          "package_name": "com.example.bankapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPBkK6o75OgP775QCIryJqxIJVZh3lOwQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664985898957:android:fbf9d3e9d84b2396d23e84",
+        "android_client_info": {
+          "package_name": "com.example.loginnfirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPBkK6o75OgP775QCIryJqxIJVZh3lOwQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
